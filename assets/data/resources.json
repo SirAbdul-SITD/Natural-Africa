@@ -1,0 +1,44 @@
+[
+  {
+    "id": "oil",
+    "name": "Crude Oil",
+    "category": "Fossil Fuel",
+    "description": "Crude oil is a major export for several African countries and is used primarily for fuel and petrochemicals.",
+    "countries": [
+      "nga"
+    ],
+    "uses": "Fuel, petrochemicals, energy production.",
+    "exportDestinations": [
+      "Netherlands",
+      "India"
+    ]
+  },
+  {
+    "id": "cobalt",
+    "name": "Cobalt",
+    "category": "Metal",
+    "description": "Cobalt is critical for lithium-ion batteries and is mined extensively in DRC.",
+    "countries": [
+      "cod"
+    ],
+    "uses": "Battery production, alloys, catalysts.",
+    "exportDestinations": [
+      "China",
+      "Finland"
+    ]
+  },
+  {
+    "id": "tin",
+    "name": "Tin",
+    "category": "Metal",
+    "description": "Tin is used for solder, plating, and alloys.",
+    "countries": [
+      "nga"
+    ],
+    "uses": "Soldering, plating, alloys.",
+    "exportDestinations": [
+      "Germany",
+      "China"
+    ]
+  }
+]

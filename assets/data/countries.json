@@ -1,0 +1,35 @@
+[
+  {
+    "id": "nga",
+    "name": "Nigeria",
+    "iso2": "NG",
+    "description": "Nigeria has large petroleum and natural gas reserves; also important are tin, limestone, iron ore, and coal deposits.",
+    "resources": [
+      "oil",
+      "gas",
+      "tin"
+    ],
+    "exportPartners": [
+      "India",
+      "Netherlands",
+      "Spain"
+    ],
+    "region": "West Africa"
+  },
+  {
+    "id": "cod",
+    "name": "Democratic Republic of the Congo",
+    "iso2": "CD",
+    "description": "DRC is rich in copper, cobalt, diamonds, coltan and other strategic minerals.",
+    "resources": [
+      "cobalt",
+      "copper",
+      "diamonds"
+    ],
+    "exportPartners": [
+      "China",
+      "Belgium"
+    ],
+    "region": "Central Africa"
+  }
+]
