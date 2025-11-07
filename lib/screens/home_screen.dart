@@ -242,12 +242,12 @@ class _TopBar extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(12, 12, 12, 6),
       child: Row(
         children: [
-          IconButton(
-            icon: Icon(Icons.menu_rounded, color: cs.onBackground.withOpacity(0.9)),
-            onPressed: () => ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Menu placeholder'))),
-            tooltip: 'Menu',
-          ),
-          const Spacer(),
+          // IconButton(
+          //   icon: Icon(Icons.menu_rounded, color: cs.onBackground.withOpacity(0.9)),
+          //   onPressed: () => ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Menu placeholder'))),
+          //   tooltip: 'Menu',
+          // ),
+          // const Spacer(),
           Text(
             'Home',
             style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
