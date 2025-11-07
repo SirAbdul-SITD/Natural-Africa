@@ -3,42 +3,126 @@
     "id": "oil",
     "name": "Crude Oil",
     "category": "Fossil Fuel",
-    "description": "Crude oil is a major export for several African countries and is used primarily for fuel and petrochemicals.",
-    "countries": [
-      "nga"
-    ],
-    "uses": "Fuel, petrochemicals, energy production.",
-    "exportDestinations": [
-      "Netherlands",
-      "India"
-    ]
+    "description": "Crude oil is one of Africa’s most valuable exports, serving as the foundation for fuels, lubricants, and countless chemical products.",
+    "countries": ["nga", "ago", "gha", "egy", "dza"],
+    "uses": "Refined into petrol, diesel, jet fuel, and feedstock for petrochemicals and plastics.",
+    "exportDestinations": ["India", "Netherlands", "Spain", "China", "United States"]
+  },
+  {
+    "id": "gas",
+    "name": "Natural Gas",
+    "category": "Fossil Fuel",
+    "description": "Natural gas is used for power generation, industrial heating, and as a clean alternative to coal. North and West Africa are major producers.",
+    "countries": ["nga", "egy", "dza", "eth"],
+    "uses": "Electricity generation, heating, fertilizer production, industrial fuel.",
+    "exportDestinations": ["Italy", "France", "Turkey", "Greece"]
   },
   {
     "id": "cobalt",
     "name": "Cobalt",
     "category": "Metal",
-    "description": "Cobalt is critical for lithium-ion batteries and is mined extensively in DRC.",
-    "countries": [
-      "cod"
-    ],
-    "uses": "Battery production, alloys, catalysts.",
-    "exportDestinations": [
-      "China",
-      "Finland"
-    ]
+    "description": "Cobalt is essential in manufacturing rechargeable lithium-ion batteries and high-strength alloys. The DRC supplies most of the global demand.",
+    "countries": ["cod"],
+    "uses": "Battery production, superalloys, catalysts, pigments.",
+    "exportDestinations": ["China", "Finland", "South Korea"]
   },
   {
-    "id": "tin",
-    "name": "Tin",
+    "id": "copper",
+    "name": "Copper",
     "category": "Metal",
-    "description": "Tin is used for solder, plating, and alloys.",
-    "countries": [
-      "nga"
-    ],
-    "uses": "Soldering, plating, alloys.",
-    "exportDestinations": [
-      "Germany",
-      "China"
-    ]
+    "description": "Copper is used in electrical wiring, plumbing, and electronics. The DRC and Zambia are leading African producers.",
+    "countries": ["cod", "zaf"],
+    "uses": "Electrical conductors, plumbing, renewable energy systems.",
+    "exportDestinations": ["China", "India", "Germany"]
+  },
+  {
+    "id": "gold",
+    "name": "Gold",
+    "category": "Precious Metal",
+    "description": "Gold has been mined in Africa for centuries. It remains one of the continent’s top exports due to global demand for jewelry and investment.",
+    "countries": ["gha", "zaf", "eth"],
+    "uses": "Jewelry, investment, electronics, medical devices.",
+    "exportDestinations": ["Switzerland", "United States", "India"]
+  },
+  {
+    "id": "diamonds",
+    "name": "Diamonds",
+    "category": "Gemstone",
+    "description": "Africa supplies some of the world’s finest diamonds, used for both jewelry and industrial applications.",
+    "countries": ["cod", "ago", "zaf"],
+    "uses": "Jewelry, cutting and drilling tools, industrial abrasives.",
+    "exportDestinations": ["Belgium", "India", "United Arab Emirates"]
+  },
+  {
+    "id": "bauxite",
+    "name": "Bauxite",
+    "category": "Ore",
+    "description": "Bauxite is the world’s main source of aluminum. Ghana and Guinea have rich deposits vital for the metal industry.",
+    "countries": ["gha"],
+    "uses": "Aluminum production, construction, packaging materials.",
+    "exportDestinations": ["China", "United States"]
+  },
+  {
+    "id": "phosphate",
+    "name": "Phosphate Rock",
+    "category": "Industrial Mineral",
+    "description": "Phosphate is used in fertilizers, detergents, and food production. North Africa dominates global supply.",
+    "countries": ["dza", "egy", "mar"],
+    "uses": "Fertilizer, food-grade phosphates, detergents.",
+    "exportDestinations": ["India", "Spain", "Brazil"]
+  },
+  {
+    "id": "platinum",
+    "name": "Platinum Group Metals",
+    "category": "Precious Metal",
+    "description": "South Africa holds most of the world’s platinum reserves, used in catalytic converters and jewelry.",
+    "countries": ["zaf"],
+    "uses": "Catalytic converters, jewelry, electronics, fuel cells.",
+    "exportDestinations": ["Japan", "United States", "Germany"]
+  },
+  {
+    "id": "soda_ash",
+    "name": "Soda Ash",
+    "category": "Industrial Mineral",
+    "description": "Kenya’s Lake Magadi hosts one of Africa’s largest natural soda ash deposits, crucial for glass and detergent manufacturing.",
+    "countries": ["ken"],
+    "uses": "Glass production, detergents, chemical manufacturing.",
+    "exportDestinations": ["Tanzania", "India", "Netherlands"]
+  },
+  {
+    "id": "tantalum",
+    "name": "Tantalum",
+    "category": "Metal",
+    "description": "Tantalum is highly corrosion-resistant and used in electronics. Ethiopia and the DRC have significant reserves.",
+    "countries": ["eth", "cod"],
+    "uses": "Capacitors, high-temperature alloys, electronics.",
+    "exportDestinations": ["China", "Germany", "United States"]
+  },
+  {
+    "id": "limestone",
+    "name": "Limestone",
+    "category": "Industrial Mineral",
+    "description": "Limestone is widely used in construction, cement production, and agriculture. Found across several African countries.",
+    "countries": ["nga", "ken", "egy"],
+    "uses": "Cement, construction, soil conditioning.",
+    "exportDestinations": ["Regional African markets"]
+  },
+  {
+    "id": "coltan",
+    "name": "Coltan",
+    "category": "Ore",
+    "description": "Coltan is a source of tantalum and niobium, vital in electronics manufacturing. The DRC is the main producer.",
+    "countries": ["cod"],
+    "uses": "Capacitors, electronics, aerospace materials.",
+    "exportDestinations": ["China", "Malaysia", "United States"]
+  },
+  {
+    "id": "gemstones",
+    "name": "Gemstones",
+    "category": "Gemstone",
+    "description": "East Africa is known for a wide range of gemstones including tanzanite, rubies, and sapphires.",
+    "countries": ["ken", "eth"],
+    "uses": "Jewelry, ornaments, collectors' items.",
+    "exportDestinations": ["Thailand", "India", "United States"]
   }
 ]

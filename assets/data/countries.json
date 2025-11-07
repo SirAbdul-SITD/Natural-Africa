@@ -3,33 +3,90 @@
     "id": "nga",
     "name": "Nigeria",
     "iso2": "NG",
-    "description": "Nigeria has large petroleum and natural gas reserves; also important are tin, limestone, iron ore, and coal deposits.",
-    "resources": [
-      "oil",
-      "gas",
-      "tin"
-    ],
-    "exportPartners": [
-      "India",
-      "Netherlands",
-      "Spain"
-    ],
+    "description": "Nigeria has abundant petroleum and natural gas reserves. Other key resources include tin, limestone, iron ore, and coal. It remains one of Africa’s largest oil producers.",
+    "resources": ["oil", "gas", "tin", "limestone"],
+    "exportPartners": ["India", "Netherlands", "Spain", "France"],
+    "region": "West Africa"
+  },
+  {
+    "id": "gha",
+    "name": "Ghana",
+    "iso2": "GH",
+    "description": "Ghana is a leading producer of gold, cocoa, and bauxite. The country also has significant manganese and oil resources.",
+    "resources": ["gold", "bauxite", "manganese", "oil"],
+    "exportPartners": ["Switzerland", "China", "India", "South Africa"],
     "region": "West Africa"
   },
   {
     "id": "cod",
     "name": "Democratic Republic of the Congo",
     "iso2": "CD",
-    "description": "DRC is rich in copper, cobalt, diamonds, coltan and other strategic minerals.",
-    "resources": [
-      "cobalt",
-      "copper",
-      "diamonds"
-    ],
-    "exportPartners": [
-      "China",
-      "Belgium"
-    ],
+    "description": "The DRC holds vast deposits of copper, cobalt, diamonds, and coltan, making it a key supplier for global technology industries.",
+    "resources": ["cobalt", "copper", "diamonds", "coltan"],
+    "exportPartners": ["China", "Belgium", "South Korea"],
     "region": "Central Africa"
+  },
+  {
+    "id": "zaf",
+    "name": "South Africa",
+    "iso2": "ZA",
+    "description": "South Africa is rich in minerals such as gold, platinum, chromium, and coal, and has a strong industrial base.",
+    "resources": ["gold", "platinum", "coal", "chromium"],
+    "exportPartners": ["China", "United States", "Germany", "Japan"],
+    "region": "Southern Africa"
+  },
+  {
+    "id": "ago",
+    "name": "Angola",
+    "iso2": "AO",
+    "description": "Angola’s economy is heavily dependent on oil production, with diamonds also playing a significant role in exports.",
+    "resources": ["oil", "diamonds", "iron_ore"],
+    "exportPartners": ["China", "India", "Portugal"],
+    "region": "Southern Africa"
+  },
+  {
+    "id": "egy",
+    "name": "Egypt",
+    "iso2": "EG",
+    "description": "Egypt possesses petroleum, natural gas, phosphates, and limestone, supporting both its industrial and export sectors.",
+    "resources": ["oil", "gas", "phosphate", "limestone"],
+    "exportPartners": ["Italy", "Greece", "United States", "Saudi Arabia"],
+    "region": "North Africa"
+  },
+  {
+    "id": "dza",
+    "name": "Algeria",
+    "iso2": "DZ",
+    "description": "Algeria is one of Africa’s largest natural gas exporters and also has major oil and phosphate reserves.",
+    "resources": ["gas", "oil", "phosphate"],
+    "exportPartners": ["Spain", "France", "Italy", "Turkey"],
+    "region": "North Africa"
+  },
+  {
+    "id": "ken",
+    "name": "Kenya",
+    "iso2": "KE",
+    "description": "Kenya’s natural resources include soda ash, limestone, gemstones, and rare earth elements. It is also known for geothermal energy.",
+    "resources": ["soda_ash", "limestone", "gemstones"],
+    "exportPartners": ["Uganda", "Tanzania", "Netherlands", "United States"],
+    "region": "East Africa"
+  },
+  {
+    "id": "eth",
+    "name": "Ethiopia",
+    "iso2": "ET",
+    "description": "Ethiopia’s key resources include gold, tantalum, potash, and natural gas. Agriculture and minerals drive its exports.",
+    "resources": ["gold", "tantalum", "potash", "gas"],
+    "exportPartners": ["China", "Switzerland", "Saudi Arabia"],
+    "region": "East Africa"
+  },
+  {
+    "id": "mar",
+    "name": "Morocco",
+    "iso2": "MA",
+    "description": "Morocco holds over 70% of the world’s phosphate reserves and also produces lead, zinc, and silver.",
+    "resources": ["phosphate", "lead", "zinc", "silver"],
+    "exportPartners": ["Spain", "France", "India", "Italy"],
+    "region": "North Africa"
   }
 ]

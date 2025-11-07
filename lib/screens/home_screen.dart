@@ -260,11 +260,6 @@ class _TopBar extends StatelessWidget {
                 onPressed: () => Navigator.pushNamed(context, SearchScreen.routeName),
                 tooltip: 'Search',
               ),
-              IconButton(
-                icon: Icon(Icons.settings_outlined, color: cs.onBackground.withOpacity(0.9)),
-                onPressed: () => Navigator.pushNamed(context, SettingsScreen.routeName),
-                tooltip: 'Settings',
-              ),
             ],
           ),
         ],
