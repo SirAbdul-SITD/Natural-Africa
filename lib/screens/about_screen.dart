@@ -15,6 +15,8 @@ class AboutScreen extends StatelessWidget {
           SizedBox(height:10),
           Text('Version: 1.0.0'),
           SizedBox(height:8),
+          Text('Explore the continent’s natural resources with elegant, offline content curated for learning and discovery.'),
+          SizedBox(height:8),
           Text('Mission: Empower knowledge about Africa\'s natural resources. This app works fully offline and provides curated, factual descriptions of natural resources found across African countries.'),
           SizedBox(height:12),
           Text('Credits:', style: TextStyle(fontWeight: FontWeight.w600)),

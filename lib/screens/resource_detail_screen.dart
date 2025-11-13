@@ -2,7 +2,6 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:natural_africa/services/data_service.dart';
-import 'package:natural_africa/models/resource.dart';
 import 'package:natural_africa/providers/favorites_provider.dart';
 
 class ResourceDetailScreen extends StatelessWidget {

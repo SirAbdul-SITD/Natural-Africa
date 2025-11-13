@@ -7,7 +7,6 @@ import 'package:natural_africa/screens/resource_list_screen.dart';
 import 'package:natural_africa/screens/favorites_screen.dart';
 import 'package:natural_africa/screens/search_screen.dart';
 import 'package:natural_africa/screens/about_screen.dart';
-import 'package:natural_africa/screens/settings_screen.dart';
 
 /// Apple-inspired minimal HomeScreen for Natural Africa.
 /// Drop into lib/screens/home_screen.dart (replace existing).
@@ -170,7 +169,7 @@ class HomeScreen extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(14),
                                   ),
                                   child: Image.asset(
-                                    'assets/icon/icons.png',
+                                    'assets/icon/icon.png',
                                     width:
                                         MediaQuery.of(context).size.width * 0.3,
                                     fit: BoxFit.contain,
@@ -424,7 +423,6 @@ class _GlassTileState extends State<_GlassTile> {
 
   @override
   Widget build(BuildContext context) {
-    final cs = Theme.of(context).colorScheme;
 
     return Semantics(
       button: true,
