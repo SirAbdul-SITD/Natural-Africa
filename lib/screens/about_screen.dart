@@ -18,9 +18,9 @@ class AboutScreen extends StatelessWidget {
           Text('Mission: Empower knowledge about Africa\'s natural resources. This app works fully offline and provides curated, factual descriptions of natural resources found across African countries.'),
           SizedBox(height:12),
           Text('Credits:', style: TextStyle(fontWeight: FontWeight.w600)),
-          Text('• Data curated by Natural Africa Team'),
+          Text('• Data curated by OBAINO COMMUNICATIONS AND GENERAL MERCHANDISE'),
           SizedBox(height:12),
-          Text('Contact: info@naturalafrica.app'),
+          Text('Contact: dev@obaino-cagm.name.ng'),
         ]),
       ),
     );

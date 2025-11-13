@@ -77,7 +77,8 @@ class HomeScreen extends StatelessWidget {
 
                     // Frosted glass card
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 18),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(18),
                         child: BackdropFilter(
@@ -87,7 +88,8 @@ class HomeScreen extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.65),
                               borderRadius: BorderRadius.circular(18),
-                              border: Border.all(color: Colors.white.withOpacity(0.6)),
+                              border: Border.all(
+                                  color: Colors.white.withOpacity(0.6)),
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.black.withOpacity(0.04),
@@ -108,15 +110,20 @@ class HomeScreen extends StatelessWidget {
                                       // val used to slightly translate title for an elegant entrance
                                       return Transform.translate(
                                         offset: Offset(0, (1 - val) * 8),
-                                        child: Opacity(opacity: val, child: child),
+                                        child:
+                                            Opacity(opacity: val, child: child),
                                       );
                                     },
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           'Natural Africa',
-                                          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headlineSmall
+                                              ?.copyWith(
                                                 fontWeight: FontWeight.w800,
                                                 color: cs.onBackground,
                                                 letterSpacing: 0.1,
@@ -125,8 +132,12 @@ class HomeScreen extends StatelessWidget {
                                         const SizedBox(height: 6),
                                         Text(
                                           'Explore the continent’s natural resources with elegant, offline content curated for learning and discovery.',
-                                          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                                color: cs.onBackground.withOpacity(0.75),
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .bodyMedium
+                                              ?.copyWith(
+                                                color: cs.onBackground
+                                                    .withOpacity(0.75),
                                                 height: 1.35,
                                               ),
                                           maxLines: 3,
@@ -135,9 +146,14 @@ class HomeScreen extends StatelessWidget {
                                         const SizedBox(height: 12),
                                         Row(
                                           children: [
-                                            _StatPill(label: 'Countries', value: countryCount.toString()),
+                                            _StatPill(
+                                                label: 'Countries',
+                                                value: countryCount.toString()),
                                             const SizedBox(width: 8),
-                                            _StatPill(label: 'Resources', value: resourceCount.toString()),
+                                            _StatPill(
+                                                label: 'Resources',
+                                                value:
+                                                    resourceCount.toString()),
                                           ],
                                         ),
                                       ],
@@ -153,10 +169,11 @@ class HomeScreen extends StatelessWidget {
                                     color: cs.primary.withOpacity(0.10),
                                     borderRadius: BorderRadius.circular(14),
                                   ),
-                                  child: Icon(
-                                    Icons.clear_rounded,
-                                    color: cs.primary,
-                                    size: 36,
+                                  child: Image.asset(
+                                    'assets/icon/icons.png',
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.3,
+                                    fit: BoxFit.contain,
                                   ),
                                 ),
                               ],
@@ -212,15 +229,18 @@ class HomeScreen extends StatelessWidget {
                   // limit to 6 items on home
                   if (idx > 5) return null;
                   return Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 8),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 18, vertical: 8),
                     child: _FeaturedCard(
                       title: r.name,
                       subtitle: r.category,
-                      onTap: () => Navigator.pushNamed(context, '/resource', arguments: r.id),
+                      onTap: () => Navigator.pushNamed(context, '/resource',
+                          arguments: r.id),
                     ),
                   );
                 },
-                childCount: ds.allResources().length > 6 ? 6 : ds.allResources().length,
+                childCount:
+                    ds.allResources().length > 6 ? 6 : ds.allResources().length,
               ),
             ),
 
@@ -250,14 +270,19 @@ class _TopBar extends StatelessWidget {
           // const Spacer(),
           Text(
             'Home',
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
+            style: Theme.of(context)
+                .textTheme
+                .titleMedium
+                ?.copyWith(fontWeight: FontWeight.w700),
           ),
           const Spacer(),
           Row(
             children: [
               IconButton(
-                icon: Icon(Icons.search, color: cs.onBackground.withOpacity(0.9)),
-                onPressed: () => Navigator.pushNamed(context, SearchScreen.routeName),
+                icon:
+                    Icon(Icons.search, color: cs.onBackground.withOpacity(0.9)),
+                onPressed: () =>
+                    Navigator.pushNamed(context, SearchScreen.routeName),
                 tooltip: 'Search',
               ),
             ],
@@ -272,7 +297,8 @@ class _TopBar extends StatelessWidget {
 class _StatPill extends StatelessWidget {
   final String label;
   final String value;
-  const _StatPill({Key? key, required this.label, required this.value}) : super(key: key);
+  const _StatPill({Key? key, required this.label, required this.value})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -283,13 +309,26 @@ class _StatPill extends StatelessWidget {
         color: cs.surface.withOpacity(0.9),
         borderRadius: BorderRadius.circular(999),
         border: Border.all(color: Colors.white.withOpacity(0.6)),
-        boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 6, offset: const Offset(0, 3))],
+        boxShadow: [
+          BoxShadow(
+              color: Colors.black.withOpacity(0.02),
+              blurRadius: 6,
+              offset: const Offset(0, 3))
+        ],
       ),
       child: Row(
         children: [
-          Text(value, style: Theme.of(context).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w800)),
+          Text(value,
+              style: Theme.of(context)
+                  .textTheme
+                  .bodyMedium
+                  ?.copyWith(fontWeight: FontWeight.w800)),
           const SizedBox(width: 8),
-          Text(label, style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey)),
+          Text(label,
+              style: Theme.of(context)
+                  .textTheme
+                  .bodySmall
+                  ?.copyWith(color: Colors.grey)),
         ],
       ),
     );
@@ -301,7 +340,9 @@ class _DashboardArea extends StatelessWidget {
   final int countryCount;
   final int resourceCount;
 
-  const _DashboardArea({Key? key, required this.countryCount, required this.resourceCount}) : super(key: key);
+  const _DashboardArea(
+      {Key? key, required this.countryCount, required this.resourceCount})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -337,7 +378,10 @@ class _DashboardArea extends StatelessWidget {
       if (isWide) {
         return Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: children.map((c) => Expanded(child: Padding(padding: const EdgeInsets.all(8), child: c))).toList(),
+          children: children
+              .map((c) => Expanded(
+                  child: Padding(padding: const EdgeInsets.all(8), child: c)))
+              .toList(),
         );
       } else {
         return GridView.count(
@@ -406,20 +450,37 @@ class _GlassTileState extends State<_GlassTile> {
                   color: Colors.white.withOpacity(0.7),
                   borderRadius: BorderRadius.circular(14),
                   border: Border.all(color: Colors.white.withOpacity(0.55)),
-                  boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.03), blurRadius: 12, offset: const Offset(0, 6))],
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.black.withOpacity(0.03),
+                        blurRadius: 12,
+                        offset: const Offset(0, 6))
+                  ],
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     CircleAvatar(
                       radius: 20,
-                      backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.12),
-                      child: Icon(widget.icon, color: Theme.of(context).colorScheme.primary),
+                      backgroundColor: Theme.of(context)
+                          .colorScheme
+                          .primary
+                          .withOpacity(0.12),
+                      child: Icon(widget.icon,
+                          color: Theme.of(context).colorScheme.primary),
                     ),
                     const Spacer(),
-                    Text(widget.title, style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700)),
+                    Text(widget.title,
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleMedium
+                            ?.copyWith(fontWeight: FontWeight.w700)),
                     const SizedBox(height: 4),
-                    Text(widget.subtitle, style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[700])),
+                    Text(widget.subtitle,
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodySmall
+                            ?.copyWith(color: Colors.grey[700])),
                   ],
                 ),
               ),
@@ -437,7 +498,12 @@ class _FeaturedCard extends StatelessWidget {
   final String subtitle;
   final VoidCallback onTap;
 
-  const _FeaturedCard({Key? key, required this.title, required this.subtitle, required this.onTap}) : super(key: key);
+  const _FeaturedCard(
+      {Key? key,
+      required this.title,
+      required this.subtitle,
+      required this.onTap})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -454,7 +520,12 @@ class _FeaturedCard extends StatelessWidget {
             decoration: BoxDecoration(
               color: cs.surface,
               borderRadius: BorderRadius.circular(12),
-              boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 10, offset: const Offset(0, 6))],
+              boxShadow: [
+                BoxShadow(
+                    color: Colors.black.withOpacity(0.02),
+                    blurRadius: 10,
+                    offset: const Offset(0, 6))
+              ],
             ),
             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
             child: Row(
@@ -470,11 +541,21 @@ class _FeaturedCard extends StatelessWidget {
                 ),
                 const SizedBox(width: 12),
                 Expanded(
-                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    Text(title, style: Theme.of(context).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700)),
-                    const SizedBox(height: 4),
-                    Text(subtitle, style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[700])),
-                  ]),
+                  child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(title,
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleSmall
+                                ?.copyWith(fontWeight: FontWeight.w700)),
+                        const SizedBox(height: 4),
+                        Text(subtitle,
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodySmall
+                                ?.copyWith(color: Colors.grey[700])),
+                      ]),
                 ),
                 Icon(Icons.chevron_right, color: cs.onSurface.withOpacity(0.6)),
               ],

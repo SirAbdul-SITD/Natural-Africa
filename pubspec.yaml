@@ -1,10 +1,10 @@
 name: natural_africa
-description: An offline app presenting African natural resources.
+description: A detailed offline guide to Africa’s natural resources.
 publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.18.0 <4.0.0"
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
